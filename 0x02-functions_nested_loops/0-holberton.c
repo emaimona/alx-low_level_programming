@@ -1,5 +1,4 @@
-#include "Holberton.h"
-#include <unistd.h>
+#include "holberton.h"
 /**
  * main - write Holberton
  * Return: 0
@@ -10,7 +9,7 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 9; i++)
-		putchar(c[i]);
-	putchar('\n');
+		_putchar(c[i]);
+	_putchar('\n');
 	return (0);
 }
