@@ -11,7 +11,7 @@ int _islower(int c)
 	int r;
 	char v = c;
 
-	if (islower(v) == true)
+	if (islower(v))
 		r = 1;
 	else
 		r = 0;
