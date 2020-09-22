@@ -6,7 +6,11 @@
  */
 int main(void)
 {
-	write(2, "Holberton", 9);
+	char c[] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
+	int i;
+
+	for (i = 0; i < 9; i++)
+		putchar(c[i]);
 	putchar('\n');
 	return (0);
 }
