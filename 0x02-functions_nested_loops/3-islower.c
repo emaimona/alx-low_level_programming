@@ -9,11 +9,15 @@
 int _islower(int c)
 {
 	int r;
-	char v = c;
+	char v = (char) c;
 
 	if (islower(v))
+	{
 		r = 1;
+	}
 	else
+	{
 		r = 0;
+	}
 	return (r);
 }
