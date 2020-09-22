@@ -8,7 +8,8 @@
  */
 int _islower(int c)
 {
-	if (islower(c))
+	char v = c;
+	if (islower(v))
 		return (1);
 	else
 		return (0);
