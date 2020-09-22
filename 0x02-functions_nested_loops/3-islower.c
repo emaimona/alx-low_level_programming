@@ -9,8 +9,9 @@
 int _islower(int c)
 {
 	int r;
+	char v = c;
 
-	if (islower(c) == true)
+	if (islower(v) == true)
 		r = 1;
 	else
 		r = 0;
