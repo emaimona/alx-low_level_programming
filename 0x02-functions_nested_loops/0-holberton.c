@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int c[] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
+	char c[10] = "Holberton";
 	int i;
 
 	for (i = 0; i < 9; i++)
