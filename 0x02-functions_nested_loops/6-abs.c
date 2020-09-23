@@ -13,6 +13,6 @@ int _abs(int v)
 	if (v >= 0)
 		r = v;
 	else
-		r = r * (-1);
+		r = v * (-1);
 	return (r);
 }
