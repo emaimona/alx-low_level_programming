@@ -8,7 +8,7 @@
 
 int _abs(int v)
 {
-	int r;
+	int r = 0;
 
 	if (v >= 0)
 		r = v;
