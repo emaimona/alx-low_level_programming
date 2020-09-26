@@ -17,8 +17,7 @@ char *_strcat(char *dest, char *src)
 	for (i = 0; *(dest + i) != '\0'; i++)
 		;
 	total = i + tsrc;
-
-	for (; i <= total; i++, v++)
+	for (; i < total; i++, v++)
 		*(dest + i) = *(src + v);
 	*(dest + i) = '\0';
 
