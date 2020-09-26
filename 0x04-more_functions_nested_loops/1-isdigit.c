@@ -7,16 +7,9 @@
  */
 int _isdigit(int c)
 {
-	int r;
-
 	if (c >= 48 && c <= 57)
-	{
-		r = 1;
-	}
+		return (1);
 	else
-	{
-		r = 0;
-	}
+		return (0);
 	_putchar('\n');
-	return (r);
 }
