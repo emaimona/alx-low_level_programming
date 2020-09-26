@@ -9,6 +9,6 @@
 
 int mul(int a, int b)
 {
-	_putchar('\n');
 	return (a * b);
+	_putchar('\n');
 }
