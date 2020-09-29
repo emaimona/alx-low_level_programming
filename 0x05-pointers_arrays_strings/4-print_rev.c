@@ -10,8 +10,8 @@ void print_rev(char *s)
 {
 	int v = 0;
 
-	while (*(s + v) != '\0')
-		v++;
+	for (; *(s + v) != '\0'; v++)
+		;
 	for (; v >= 0; v--)
 		_putchar(*(s + v));
 
