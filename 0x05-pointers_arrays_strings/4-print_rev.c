@@ -16,10 +16,7 @@ void print_rev(char *s)
 			break;
 		v++;
 	}
-	while (v >= 0)
-	{
-		v--;
+	for (; v >= 0; v--)
 		_putchar(*(s + v));
-	}
 	_putchar('\n');
 }
