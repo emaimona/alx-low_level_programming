@@ -1,4 +1,4 @@
-
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -15,8 +15,9 @@ void print_array(int *a, int n)
 	for (v = 0; v < n; v++)
 	{
 		if (v == (n - 1))
-			printf("%d\n", *(a + v));
+			printf("%d", *(a + v));
 		else
 			printf("%d, ", *(a + v));
 	}
+	_putchar('\n');
 }
