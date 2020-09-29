@@ -18,8 +18,8 @@ void print_rev(char *s)
 	}
 	while (v >= 0)
 	{
-		_putchar(*(s + v));
 		v--;
+		_putchar(*(s + v));
 	}
 	_putchar('\n');
 }
