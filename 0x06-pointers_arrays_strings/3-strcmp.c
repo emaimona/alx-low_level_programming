@@ -9,7 +9,7 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int v1 = 0, v2 = 0, r;
+	int v1 = 0, v2 = 0;
 
 	for (; *(s1 + v1) != '\0'; v1++)
 		;
@@ -18,10 +18,9 @@ int _strcmp(char *s1, char *s2)
 		;
 	--v2;
 	if (v1 < v2)
-		r = -15;
+		return (-15);
 	else if (v1 > v2)
-		r = +15;
+		return (+15);
 	else
-		r = 0;
-	return (r);
+		return (0);
 }
