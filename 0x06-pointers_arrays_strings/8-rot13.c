@@ -14,7 +14,7 @@ char *rot13(char *s)
 
 	for (; *(s + i1) != '\0'; i1++)
 	{
-		for (i2 = 0; *(input + i2) != '\0'; ++i2)
+		for (i2 = 0; *(input + i2) != '\0'; i2++)
 		{
 			if (*(s + i1) == *(input + i2))
 				*(s + i1) = *(output + i2);
