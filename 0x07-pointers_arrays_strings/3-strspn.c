@@ -12,9 +12,9 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0, t = 0;
 
-	for (; *(s + i) != '\0'; i++)
+	for (; *(s + i); i++)
 	{
-		for (; *(accept + t); t++)
+		for (t = 0; *(accept + t); t++)
 		{
 			if (*(s + i) == *(accept + t))
 				break;
