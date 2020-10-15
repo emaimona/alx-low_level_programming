@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * *string_nconcat - concatenates two strings
@@ -21,7 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (t2 = 0; s2[t2]; ++t2)
 		;
 
-	p = malloc((t1 + n) * sizeof(*p));
+	p = malloc((t1 + n + 1) * sizeof(*p));
 	if (p == NULL || n <= 0)
 		return (NULL);
 
