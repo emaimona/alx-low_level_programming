@@ -40,11 +40,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < t1; i++)
 		p[i] = s1[i];
 
-	for (j = 0; j < t2; j++, i++)
-		p[i] = s2[j];
+	for (i = 0; i < t2; i++)
+		p[t1 + i] = s2[i];
 
-	i++;
-	p[i] = '\0';
+	p[t1 + t2] = '\0';
 
 	return (p);
 }
