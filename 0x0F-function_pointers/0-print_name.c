@@ -10,12 +10,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	char *t;
-
-	t = malloc(sizeof(*name));
-	if (t == NULL)
-		return;
-	free(t);
-	t = name;
-	(*f)(t);
+	if (name != NULL && f != NULL)
+		(*f)(name);
 }
