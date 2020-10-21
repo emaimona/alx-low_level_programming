@@ -8,13 +8,13 @@
  * @s - the pointer passed by
  */
 
-void print_name(char *name, void (*f)(char *s))
+void print_name(char *name, void (*f)(char *))
 {
-	char* t;
+	char *t;
 
 	t = malloc(sizeof(*name));
 	if (t == NULL)
-		return ;
+		return;
 	free(t);
 	t = name;
 	(*f)(t);
