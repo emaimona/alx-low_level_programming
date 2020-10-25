@@ -20,9 +20,7 @@ void print_c(va_list c)
  */
 void print_s(va_list s)
 {
-	char *str;
-
-	str = va_arg(c, char*);
+	char *str = va_arg(s, char *);
 	if (str == NULL)
 		str = "(nill)";
 	printf("%s", str);
@@ -74,6 +72,7 @@ void print_all(const char * const format, ...)
 	char *sep = "";
 
 	va_start(va, format);
+
 	while (format && format[i])
 	{
 		j = 0;
@@ -83,7 +82,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", sep);
 				p[j].f(va);
-				separator = ", ";
+				sep = ", ";
 			}
 			j++;
 		}
