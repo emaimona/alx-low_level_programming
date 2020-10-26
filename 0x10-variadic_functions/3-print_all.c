@@ -73,7 +73,6 @@ void print_all(const char * const format, ...)
 	char *sep = "";
 
 	va_start(va, format);
-
 	while (format && format[i])
 	{
 		j = 0;
@@ -84,6 +83,7 @@ void print_all(const char * const format, ...)
 				printf("%s", sep);
 				p[j].f(va);
 				sep = ", ";
+				break;
 			}
 			j++;
 		}
