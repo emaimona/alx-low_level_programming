@@ -4,7 +4,7 @@
 
 /**
  * list_len - returns the number of elements in a linked list
- * @h - The node
+ * @h: The node
  * Return: The number of elements
  */
 
