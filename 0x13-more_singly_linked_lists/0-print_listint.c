@@ -4,7 +4,7 @@
 
 /**
  * print_listint - prints all the elements of a listint_t
- * @listint_t: The node to be printed
+ * @h: The node to be printed
  * Return: The number of nodes
  */
 
