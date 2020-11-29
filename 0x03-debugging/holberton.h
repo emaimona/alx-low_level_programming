@@ -17,4 +17,5 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 
+int largest_number(int a, int b, int c);
 #endif
