@@ -13,9 +13,9 @@ int main(void)
 
 	i = 0;
 
-	while (i < 10) /* This is the part, we have no increment which means that the condition will be true forever*/
+	while (i < 10) /* This is the part */
 	{
-		putchar(i);
+		putchar(i); /* thre should an increment */
 	}
 
 	printf("Infinite loop avoided! \\o/\n");
